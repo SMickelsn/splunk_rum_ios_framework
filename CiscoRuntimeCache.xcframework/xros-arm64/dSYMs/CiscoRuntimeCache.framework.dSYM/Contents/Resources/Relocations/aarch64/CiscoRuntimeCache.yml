@@ -1,0 +1,61 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/runner/Library/Developer/Xcode/DerivedData/SessionReplay-fmtdyyvemyooneggglohggoxtqqy/Build/Intermediates.noindex/ArchiveIntermediates/CiscoRuntimeCache/InstallationBuildProductsLocation/Library/Frameworks/CiscoRuntimeCache.framework/CiscoRuntimeCache'
+relocations:
+  - { offset: 0x33212, size: 0x8, addend: 0x0, symName: _CiscoRuntimeCacheVersionString, symObjAddr: 0x0, symBinAddr: 0x60E0, symSize: 0x0 }
+  - { offset: 0x33247, size: 0x8, addend: 0x0, symName: _CiscoRuntimeCacheVersionNumber, symObjAddr: 0x40, symBinAddr: 0x6120, symSize: 0x0 }
+  - { offset: 0x33284, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC4ItemCMi', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x4 }
+  - { offset: 0x3329C, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC4ItemCMi', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x4 }
+  - { offset: 0x332B0, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC4ItemCMr', symObjAddr: 0x4, symBinAddr: 0x4004, symSize: 0x80 }
+  - { offset: 0x33389, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC4ItemCMa', symObjAddr: 0x204, symBinAddr: 0x41AC, symSize: 0xC }
+  - { offset: 0x3339D, size: 0x8, addend: 0x0, symName: ___swift_instantiateGenericMetadata, symObjAddr: 0x210, symBinAddr: 0x41B8, symSize: 0x2C }
+  - { offset: 0x333FC, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC4ItemC9isGarbageSbvg', symObjAddr: 0x84, symBinAddr: 0x4084, symSize: 0x3C }
+  - { offset: 0x334A6, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC4ItemC_3forACyxGxSg_AA4WeakCyyXlGtcfC', symObjAddr: 0xC0, symBinAddr: 0x40C0, symSize: 0x70 }
+  - { offset: 0x334F5, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC4ItemCfd', symObjAddr: 0x188, symBinAddr: 0x4130, symSize: 0x58 }
+  - { offset: 0x3352E, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC4ItemCfD', symObjAddr: 0x1E0, symBinAddr: 0x4188, symSize: 0x24 }
+  - { offset: 0x33B38, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C12customMirrors0E0Vvg', symObjAddr: 0x14B4, symBinAddr: 0x5698, symSize: 0x284 }
+  - { offset: 0x33C43, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0CyxGs17CustomReflectableAAsAEP12customMirrors0G0VvgTW', symObjAddr: 0x1738, symBinAddr: 0x591C, symSize: 0x20 }
+  - { offset: 0x33CC2, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSO_Tg5', symObjAddr: 0x1758, symBinAddr: 0x593C, symSize: 0xF8 }
+  - { offset: 0x33DC4, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x1850, symBinAddr: 0x5A34, symSize: 0x44 }
+  - { offset: 0x33DD8, size: 0x8, addend: 0x0, symName: '_$sSD8IteratorV8_VariantOyxq___GSHRzr0_lWOy', symObjAddr: 0x1894, symBinAddr: 0x5A78, symSize: 0x8 }
+  - { offset: 0x33DEC, size: 0x8, addend: 0x0, symName: '_$sSD8IteratorV8_VariantOySO17CiscoRuntimeCache0dE4ItemCyxG__Gs8SendableRzlWOe', symObjAddr: 0x189C, symBinAddr: 0x5A80, symSize: 0x8 }
+  - { offset: 0x33E00, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C24requestGarbageCollection5forceySb_tFSSyYbcfU_TA', symObjAddr: 0x18EC, symBinAddr: 0x5AD0, symSize: 0xC }
+  - { offset: 0x33E14, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0CMa', symObjAddr: 0x18F8, symBinAddr: 0x5ADC, symSize: 0xC }
+  - { offset: 0x33E28, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0CMr', symObjAddr: 0x1908, symBinAddr: 0x5AE8, symSize: 0x74 }
+  - { offset: 0x34061, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C4nameSSSgvg', symObjAddr: 0x0, symBinAddr: 0x41E4, symSize: 0x2C }
+  - { offset: 0x340A6, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C5countSivg', symObjAddr: 0x2C, symBinAddr: 0x4210, symSize: 0x84 }
+  - { offset: 0x3410C, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C13cacheHitCount33_F1AD964ED70FDCE56302CCDD105A6D2CLLSivg', symObjAddr: 0xB0, symBinAddr: 0x4294, symSize: 0x8 }
+  - { offset: 0x3412F, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C13cacheHitCount33_F1AD964ED70FDCE56302CCDD105A6D2CLLSivs', symObjAddr: 0xB8, symBinAddr: 0x429C, symSize: 0x8 }
+  - { offset: 0x3415A, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C4name8poolName22garbageCollectionCountACyxGSSSg_SSSitcfC', symObjAddr: 0xC0, symBinAddr: 0x42A4, symSize: 0x6C }
+  - { offset: 0x341AC, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C4name8poolName22garbageCollectionCountACyxGSSSg_SSSitcfc', symObjAddr: 0x12C, symBinAddr: 0x4310, symSize: 0x130 }
+  - { offset: 0x34230, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append5value3foryxSg_yXltYaF', symObjAddr: 0x25C, symBinAddr: 0x4440, symSize: 0x70 }
+  - { offset: 0x34319, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append5value3foryxSg_yXltYaFTY0_', symObjAddr: 0x2CC, symBinAddr: 0x44B0, symSize: 0xF8 }
+  - { offset: 0x343E1, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append5value3foryxSg_yXltYaFTY1_', symObjAddr: 0x3C4, symBinAddr: 0x45A8, symSize: 0x40 }
+  - { offset: 0x3446D, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append5value3foryxSg_yXltYaFTY2_', symObjAddr: 0x404, symBinAddr: 0x45E8, symSize: 0x44 }
+  - { offset: 0x344F9, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append5value3for4withyxSg_yXlSOtYaF', symObjAddr: 0x448, symBinAddr: 0x462C, symSize: 0x70 }
+  - { offset: 0x34570, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append5value3for4withyxSg_yXlSOtYaFTY0_', symObjAddr: 0x4B8, symBinAddr: 0x469C, symSize: 0xD4 }
+  - { offset: 0x34646, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append5value3for4withyxSg_yXlSOtYaFTY1_', symObjAddr: 0x58C, symBinAddr: 0x4770, symSize: 0x40 }
+  - { offset: 0x346E4, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append5value3for4withyxSg_yXlSOtYaFTY2_', symObjAddr: 0x5CC, symBinAddr: 0x47B0, symSize: 0x44 }
+  - { offset: 0x34796, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C6append33_F1AD964ED70FDCE56302CCDD105A6D2CLL4item4withyAA0bC4ItemCyxG_SOSgtF', symObjAddr: 0x610, symBinAddr: 0x47F4, symSize: 0x118 }
+  - { offset: 0x3489C, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C5resetyyF', symObjAddr: 0x728, symBinAddr: 0x490C, symSize: 0x80 }
+  - { offset: 0x3490A, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C5value3forxSgyXl_tYaF', symObjAddr: 0x7A8, symBinAddr: 0x498C, symSize: 0x24 }
+  - { offset: 0x34947, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C5value3forxSgyXl_tYaFTY0_', symObjAddr: 0x7CC, symBinAddr: 0x49B0, symSize: 0xC0 }
+  - { offset: 0x34A1B, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C5value3forxSgyXl_tYaFTY1_', symObjAddr: 0x88C, symBinAddr: 0x4A70, symSize: 0x44 }
+  - { offset: 0x34A94, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C5value3forxSgyXl_tYaFTY2_', symObjAddr: 0x8D0, symBinAddr: 0x4AB4, symSize: 0x30 }
+  - { offset: 0x34B14, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C5value3forxSgSO_tF', symObjAddr: 0x900, symBinAddr: 0x4AE4, symSize: 0x13C }
+  - { offset: 0x34BC0, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C9readValue3for10orGeneratexSgyXl_AGyXEtYaF', symObjAddr: 0xA3C, symBinAddr: 0x4C20, symSize: 0x80 }
+  - { offset: 0x34C43, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C9readValue3for10orGeneratexSgyXl_AGyXEtYaFTY0_', symObjAddr: 0xABC, symBinAddr: 0x4CA0, symSize: 0xD0 }
+  - { offset: 0x34D44, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C9readValue3for10orGeneratexSgyXl_AGyXEtYaFTY1_', symObjAddr: 0xB8C, symBinAddr: 0x4D70, symSize: 0x44 }
+  - { offset: 0x34DD8, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C9readValue3for10orGeneratexSgyXl_AGyXEtYaFTY2_', symObjAddr: 0xBD0, symBinAddr: 0x4DB4, symSize: 0x158 }
+  - { offset: 0x34E8E, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C9readValue3for10orGeneratexSgyXl_AGyXEtYaFTY3_', symObjAddr: 0xD28, symBinAddr: 0x4F0C, symSize: 0x40 }
+  - { offset: 0x34F52, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C9readValue3for10orGeneratexSgyXl_AGyXEtYaFTY4_', symObjAddr: 0xD68, symBinAddr: 0x4F4C, symSize: 0x4C }
+  - { offset: 0x35015, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C24requestGarbageCollection5forceySb_tF', symObjAddr: 0xDB4, symBinAddr: 0x4F98, symSize: 0x54C }
+  - { offset: 0x35361, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C24requestGarbageCollection5forceySb_tFSSyYbcfU_', symObjAddr: 0x1300, symBinAddr: 0x54E4, symSize: 0x144 }
+  - { offset: 0x354DD, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0Cfd', symObjAddr: 0x1444, symBinAddr: 0x5628, symSize: 0x34 }
+  - { offset: 0x35500, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0CfD', symObjAddr: 0x1478, symBinAddr: 0x565C, symSize: 0x18 }
+  - { offset: 0x35534, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0C15unownedExecutorScevg', symObjAddr: 0x1490, symBinAddr: 0x5674, symSize: 0xC }
+  - { offset: 0x35557, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache0bC0CyxGScAAAScA15unownedExecutorScevgTW', symObjAddr: 0x149C, symBinAddr: 0x5680, symSize: 0x18 }
+  - { offset: 0x356C8, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache4WeakCMr', symObjAddr: 0x4, symBinAddr: 0x5DD0, symSize: 0x40 }
+  - { offset: 0x35715, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache4WeakCMa', symObjAddr: 0x84, symBinAddr: 0x5E34, symSize: 0xC }
+  - { offset: 0x35756, size: 0x8, addend: 0x0, symName: '_$s17CiscoRuntimeCache4WeakCfD', symObjAddr: 0x60, symBinAddr: 0x5E10, symSize: 0x24 }
+...
