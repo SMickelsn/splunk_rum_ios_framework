@@ -1,0 +1,4 @@
+framework module SplunkCommon {
+  header "SplunkCommon-Swift.h"
+  requires objc
+}

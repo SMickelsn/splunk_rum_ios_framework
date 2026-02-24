@@ -1,0 +1,4 @@
+framework module SplunkInteractions {
+  header "SplunkInteractions-Swift.h"
+  requires objc
+}

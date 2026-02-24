@@ -1,0 +1,4 @@
+framework module SplunkAppState {
+  header "SplunkAppState-Swift.h"
+  requires objc
+}

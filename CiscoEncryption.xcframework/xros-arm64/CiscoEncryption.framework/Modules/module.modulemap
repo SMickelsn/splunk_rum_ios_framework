@@ -1,0 +1,4 @@
+framework module CiscoEncryption {
+  header "CiscoEncryption-Swift.h"
+  requires objc
+}

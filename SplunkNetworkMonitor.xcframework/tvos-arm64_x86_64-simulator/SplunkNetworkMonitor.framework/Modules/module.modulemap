@@ -1,0 +1,4 @@
+framework module SplunkNetworkMonitor {
+  header "SplunkNetworkMonitor-Swift.h"
+  requires objc
+}

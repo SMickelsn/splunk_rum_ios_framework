@@ -1,0 +1,4 @@
+framework module SplunkSlowFrameDetector {
+  header "SplunkSlowFrameDetector-Swift.h"
+  requires objc
+}

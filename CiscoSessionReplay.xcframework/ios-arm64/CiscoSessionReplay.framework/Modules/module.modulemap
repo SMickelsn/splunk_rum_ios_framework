@@ -1,0 +1,4 @@
+framework module CiscoSessionReplay {
+  header "CiscoSessionReplay-Swift.h"
+  requires objc
+}

@@ -1,0 +1,4 @@
+framework module CiscoRuntimeCache {
+  header "CiscoRuntimeCache-Swift.h"
+  requires objc
+}

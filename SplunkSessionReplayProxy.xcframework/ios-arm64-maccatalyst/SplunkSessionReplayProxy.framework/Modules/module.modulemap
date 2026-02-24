@@ -1,0 +1,4 @@
+framework module SplunkSessionReplayProxy {
+  header "SplunkSessionReplayProxy-Swift.h"
+  requires objc
+}

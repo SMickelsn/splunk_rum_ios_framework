@@ -1,0 +1,4 @@
+framework module CiscoInteractions {
+  header "CiscoInteractions-Swift.h"
+  requires objc
+}

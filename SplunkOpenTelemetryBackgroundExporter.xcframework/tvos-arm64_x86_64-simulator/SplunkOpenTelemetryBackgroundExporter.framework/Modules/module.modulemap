@@ -1,0 +1,4 @@
+framework module SplunkOpenTelemetryBackgroundExporter {
+  header "SplunkOpenTelemetryBackgroundExporter-Swift.h"
+  requires objc
+}

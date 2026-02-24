@@ -1,0 +1,4 @@
+framework module SplunkNavigation {
+  header "SplunkNavigation-Swift.h"
+  requires objc
+}

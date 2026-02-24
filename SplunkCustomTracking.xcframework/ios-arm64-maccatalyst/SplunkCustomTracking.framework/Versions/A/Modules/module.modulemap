@@ -1,0 +1,4 @@
+framework module SplunkCustomTracking {
+  header "SplunkCustomTracking-Swift.h"
+  requires objc
+}

@@ -1,0 +1,76 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SplunkNetwork
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import CiscoLogger
+import Foundation
+import OpenTelemetryApi
+import SplunkCommon
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct NetworkInstrumentationData : SplunkCommon.ModuleEventData {
+}
+public struct NetworkInstrumentationMetadata : SplunkCommon.ModuleEventMetadata {
+  public var timestamp: Foundation.Date
+  public static func == (a: SplunkNetwork.NetworkInstrumentationMetadata, b: SplunkNetwork.NetworkInstrumentationMetadata) -> Swift.Bool
+}
+extension SplunkNetwork.NetworkInstrumentation : SplunkCommon.Module {
+  public typealias Configuration = SplunkNetwork.NetworkInstrumentationConfiguration
+  public typealias RemoteConfiguration = SplunkNetwork.NetworkRemoteConfiguration
+  public typealias EventMetadata = SplunkNetwork.NetworkInstrumentationMetadata
+  public typealias EventData = SplunkNetwork.NetworkInstrumentationData
+  public func onPublish(data _: @escaping (SplunkNetwork.NetworkInstrumentationMetadata, SplunkNetwork.NetworkInstrumentationData) -> Swift.Void)
+  public func deleteData(for _: any SplunkCommon.ModuleEventMetadata)
+}
+public struct NetworkInstrumentationConfiguration : SplunkCommon.ModuleConfiguration {
+  public var isEnabled: Swift.Bool
+  public var ignoreURLs: SplunkNetwork.IgnoreURLs?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(isEnabled: Swift.Bool, ignoreURLs: SplunkNetwork.IgnoreURLs?)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct NetworkRemoteConfiguration : SplunkCommon.RemoteModuleConfiguration {
+  public var enabled: Swift.Bool
+  public var ignoreURLs: SplunkNetwork.IgnoreURLs
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(from data: Foundation.Data)
+  #endif
+}
+public class NetworkInstrumentation {
+  public var excludedEndpoints: [Foundation.URL]?
+  weak public var sharedState: (any SplunkCommon.AgentSharedState)?
+  required public init()
+  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func install(with configuration: (any SplunkCommon.ModuleConfiguration)?, remoteConfiguration: (any SplunkCommon.RemoteModuleConfiguration)?)
+  #endif
+  public func uninstall()
+  public func getIgnoreURLs() -> SplunkNetwork.IgnoreURLs
+}
+public class IgnoreURLs : Swift.Codable {
+  public init()
+  public init(patterns: Swift.Set<Swift.String>) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(containing pattern: Foundation.NSRegularExpression?)
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @discardableResult
+  public func clearPatterns() -> Swift.Int
+  @discardableResult
+  public func addPatterns(_ patterns: Swift.Set<Swift.String>) throws -> Swift.Int
+  @discardableResult
+  public func addPattern(_ pattern: Foundation.NSRegularExpression) -> Swift.Bool
+  public func count() -> Swift.Int
+  public func getAllPatterns() -> [Swift.String]
+  public func matches(_ urlString: Swift.String) -> Swift.Bool
+  public func matches(url: Foundation.URL) -> Swift.Bool
+  @objc deinit
+}
+extension Foundation.URLSessionTask {
+  @objc dynamic open func splunkSwizzledSetState(state: Foundation.URLSessionTask.State)
+  @objc dynamic open func splunkSwizzledResume()
+}

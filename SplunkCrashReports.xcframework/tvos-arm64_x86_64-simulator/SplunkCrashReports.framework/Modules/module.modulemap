@@ -1,0 +1,4 @@
+framework module SplunkCrashReports {
+  header "SplunkCrashReports-Swift.h"
+  requires objc
+}

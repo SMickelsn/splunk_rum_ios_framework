@@ -1,0 +1,52 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-xros1.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SplunkWebView
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import Foundation
+import SplunkCommon
+import Swift
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct WebViewInstrumentationConfiguration : SplunkCommon.ModuleConfiguration {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct WebViewInstrumentationRemoteConfiguration : SplunkCommon.RemoteModuleConfiguration {
+  public var enabled: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(from _: Foundation.Data)
+  #endif
+}
+extension SplunkWebView.WebViewInstrumentation : SplunkCommon.Module {
+  public typealias Configuration = SplunkWebView.WebViewInstrumentationConfiguration
+  public typealias RemoteConfiguration = SplunkWebView.WebViewInstrumentationRemoteConfiguration
+  public typealias EventMetadata = SplunkWebView.WebViewInstrumentationMetadata
+  public typealias EventData = SplunkWebView.WebViewInstrumentationData
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func install(with _: (any SplunkCommon.ModuleConfiguration)?, remoteConfiguration _: (any SplunkCommon.RemoteModuleConfiguration)?)
+  #endif
+  final public func onPublish(data _: @escaping (SplunkWebView.WebViewInstrumentationMetadata, SplunkWebView.WebViewInstrumentationData) -> Swift.Void)
+  final public func deleteData(for _: any SplunkCommon.ModuleEventMetadata)
+}
+@objc @_inheritsConvenienceInitializers final public class WebViewInstrumentation : ObjectiveC.NSObject {
+  weak final public var sharedState: (any SplunkCommon.AgentSharedState)?
+  @objc override dynamic public init()
+  final public func injectSessionId(into webView: WebKit.WKWebView)
+  @objc deinit
+}
+@available(iOS 14.0, *)
+extension SplunkWebView.WebViewInstrumentation : WebKit.WKScriptMessageHandlerWithReply {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc final public func userContentController(_: WebKit.WKUserContentController, didReceive _: WebKit.WKScriptMessage, replyHandler: @escaping @_Concurrency.MainActor @Sendable (Any?, Swift.String?) -> Swift.Void)
+  #endif
+}
+extension SplunkWebView.WebViewInstrumentation : WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor @preconcurrency @objc final public func userContentController(_: WebKit.WKUserContentController, didReceive _: WebKit.WKScriptMessage)
+}
+public struct WebViewInstrumentationMetadata : SplunkCommon.ModuleEventMetadata {
+  public var timestamp: Foundation.Date
+  public static func == (a: SplunkWebView.WebViewInstrumentationMetadata, b: SplunkWebView.WebViewInstrumentationMetadata) -> Swift.Bool
+}
+public struct WebViewInstrumentationData : SplunkCommon.ModuleEventData {
+}

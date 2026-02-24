@@ -1,0 +1,4 @@
+framework module SplunkAgent {
+  header "SplunkAgent-Swift.h"
+  requires objc
+}

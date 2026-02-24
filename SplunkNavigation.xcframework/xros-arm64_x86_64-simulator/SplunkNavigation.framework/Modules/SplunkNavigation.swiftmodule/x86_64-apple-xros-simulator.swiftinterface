@@ -1,0 +1,88 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-xros1.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SplunkNavigation
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import Combine
+import Foundation
+import SplunkCommon
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct NavigationData : SplunkCommon.ModuleEventData {
+}
+public struct NavigationMetadata : SplunkCommon.ModuleEventMetadata {
+  public var timestamp: Foundation.Date
+  public static func == (a: SplunkNavigation.NavigationMetadata, b: SplunkNavigation.NavigationMetadata) -> Swift.Bool
+}
+extension SplunkNavigation.Navigation : SplunkCommon.Module {
+  public typealias Configuration = SplunkNavigation.NavigationConfiguration
+  public typealias RemoteConfiguration = SplunkNavigation.NavigationRemoteConfiguration
+  public typealias EventMetadata = SplunkNavigation.NavigationMetadata
+  public typealias EventData = SplunkNavigation.NavigationData
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func install(with configuration: (any SplunkCommon.ModuleConfiguration)?, remoteConfiguration _: (any SplunkCommon.RemoteModuleConfiguration)?)
+  #endif
+  final public func deleteData(for _: any SplunkCommon.ModuleEventMetadata)
+  final public func onPublish(data _: @escaping (SplunkNavigation.NavigationMetadata, SplunkNavigation.NavigationData) -> Swift.Void)
+}
+public struct NavigationConfiguration : SplunkCommon.ModuleConfiguration {
+  public var isEnabled: Swift.Bool
+  public var enableAutomatedTracking: Swift.Bool?
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(isEnabled: Swift.Bool, enableAutomatedTracking: Swift.Bool? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct NavigationRemoteConfiguration : SplunkCommon.RemoteModuleConfiguration {
+  public var enabled: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(from _: Foundation.Data)
+  #endif
+}
+extension SplunkNavigation.Navigation {
+  final public func track(screen name: Swift.String)
+}
+final public class Navigation : Swift.Sendable {
+  final public let screenNameStream: _Concurrency.AsyncStream<Swift.String>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var agentVersion: Swift.String? {
+    get async
+  }
+  #endif
+  @discardableResult
+  final public func agentVersion(_ agentVersion: Swift.String) -> Self
+  nonisolated(unsafe) final public var preferences: SplunkNavigation.Preferences {
+    get
+    set
+  }
+  final public let state: SplunkNavigation.RuntimeState
+  required public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Preferences : Swift.Codable, Swift.Sendable {
+  nonisolated(unsafe) final public var enableAutomatedTracking: Swift.Bool? {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  final public func enableAutomatedTracking(_ enable: Swift.Bool?) -> SplunkNavigation.Preferences
+  #endif
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension SplunkNavigation.Preferences {
+  #if compiler(>=5.3) && $NonescapableTypes
+  convenience public init(enableAutomatedTracking: Swift.Bool? = nil)
+  #endif
+}
+@_hasMissingDesignatedInitializers final public class RuntimeState : Swift.Sendable {
+  nonisolated(unsafe) final public var isAutomatedTrackingEnabled: Swift.Bool {
+    get
+  }
+  @objc deinit
+}

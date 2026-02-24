@@ -1,0 +1,43 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-xros1.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SplunkAppState
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import Foundation
+import OpenTelemetryApi
+import SplunkCommon
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+final public class AppStateModule {
+  unowned final public var sharedState: (any SplunkCommon.AgentSharedState)?
+  required public init()
+  @objc deinit
+}
+public struct AppStateConfiguration : SplunkCommon.ModuleConfiguration {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct AppStateData : SplunkCommon.ModuleEventData {
+}
+public struct AppStateMetadata : SplunkCommon.ModuleEventMetadata {
+  public var timestamp: Foundation.Date
+  public static func == (a: SplunkAppState.AppStateMetadata, b: SplunkAppState.AppStateMetadata) -> Swift.Bool
+}
+extension SplunkAppState.AppStateModule : SplunkCommon.Module {
+  public typealias Configuration = SplunkAppState.AppStateConfiguration
+  public typealias RemoteConfiguration = SplunkAppState.AppStateRemoteConfiguration
+  public typealias EventMetadata = SplunkAppState.AppStateMetadata
+  public typealias EventData = SplunkAppState.AppStateData
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func install(with _: (any SplunkCommon.ModuleConfiguration)?, remoteConfiguration _: (any SplunkCommon.RemoteModuleConfiguration)?)
+  #endif
+  final public func deleteData(for _: any SplunkCommon.ModuleEventMetadata)
+  final public func onPublish(data _: @escaping (SplunkAppState.AppStateMetadata, SplunkAppState.AppStateData) -> Swift.Void)
+}
+public struct AppStateRemoteConfiguration : SplunkCommon.RemoteModuleConfiguration {
+  public var enabled: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(from _: Foundation.Data)
+  #endif
+}

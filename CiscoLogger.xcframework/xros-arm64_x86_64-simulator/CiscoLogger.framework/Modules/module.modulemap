@@ -1,0 +1,4 @@
+framework module CiscoLogger {
+  header "CiscoLogger-Swift.h"
+  requires objc
+}

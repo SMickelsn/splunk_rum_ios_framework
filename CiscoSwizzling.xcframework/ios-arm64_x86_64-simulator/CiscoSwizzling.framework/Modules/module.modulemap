@@ -1,0 +1,4 @@
+framework module CiscoSwizzling {
+  header "CiscoSwizzling-Swift.h"
+  requires objc
+}

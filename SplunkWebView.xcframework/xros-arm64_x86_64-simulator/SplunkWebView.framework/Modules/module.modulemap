@@ -1,0 +1,4 @@
+framework module SplunkWebView {
+  header "SplunkWebView-Swift.h"
+  requires objc
+}

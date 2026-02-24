@@ -1,0 +1,4 @@
+framework module SplunkOpenTelemetry {
+  header "SplunkOpenTelemetry-Swift.h"
+  requires objc
+}
